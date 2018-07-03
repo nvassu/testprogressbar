@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="mystyles.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+</head>
+<body>
+<div class="st">
+    <div class="st-main">
+        <div class="st-main-in">
+            <h1>Progress Bars Demo</h1>
+            <div class="container st-cont">
+				<div id="progressbar1">
+					<div class="progress">
+						<div class="progress-bar" id="htmlval1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div id="progressbar2">
+					<div class="progress">
+						<div class="progress-bar" id="htmlval2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div id="progressbar3">
+					<div class="progress">
+						<div class="progress-bar" id="htmlval3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+            <select id="multi-bar">
+              <option value="progressbar1">progress1</option>
+              <option value="progressbar2">Progress2</option>
+              <option value="progressbar3">Progress3</option>
+            </select>
+            <button onclick="decrease25()">-25</button>
+            <button onclick="decrease10()">-10</button> 
+            <button onclick="increase10()">+10</button>
+            <button onclick="increase25()">+25</button> 
+            <input id="tb1" min="0" oninput="validity.valid||(value='');" type="hidden">    
+			<input id="tb2" min="0" oninput="validity.valid||(value='');" type="hidden">
+			<input id="tb3" min="0" oninput="validity.valid||(value='');" type="hidden">
+        
+            
+        </div>
+    </div>
+</div>
+ <script src="script.js"></script> 
+<!--<script src="js/bootstrap.min.js"></script>   -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
